@@ -1,4 +1,3 @@
-
 import { test, expect } from '@playwright/test';
 
 test('SCRUM-8 - [NEGATIVE] Login fails with invalid password', async ({ page }) => {
@@ -7,14 +6,16 @@ test('SCRUM-8 - [NEGATIVE] Login fails with invalid password', async ({ page }) 
     description: 'NLFWIP-1',
   });
 
-
-  
   await page.goto('/');
+
   await page.fill('#user-name', 'standard_user');
   await page.fill('#password', 'wrong_password');
   await page.click('#login-button');
 
-  await expect(page.locator('[data-test="error"]')).toBeVisible();
-  await expect(page).toHaveURL(/login/);
-  
+  const errorMessage = page.locator('[data-test="error"]');
+
+  await expect(errorMessage).toBeVisible();
+  await expect(errorMessage).toHaveText(
+    'Epic sadface: Username and password do not match any user in this service'
+  );
 });
