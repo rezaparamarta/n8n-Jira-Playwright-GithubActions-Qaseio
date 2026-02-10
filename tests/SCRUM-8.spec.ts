@@ -6,7 +6,7 @@ test('SCRUM-8 - [NEGATIVE] Login fails with invalid password', async ({ page }) 
     description: 'NLFWIP-1',
   });
 
-  await page.goto('/');
+  await page.goto('https://www.saucedemo.com/');
 
   await page.fill('#user-name', 'standard_user');
   await page.fill('#password', 'wrong_password');
