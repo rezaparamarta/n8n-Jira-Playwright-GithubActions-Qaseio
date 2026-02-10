@@ -19,3 +19,7 @@ export default defineConfig({
     }],
   ],
 });
+
+console.log('QASE_API_TOKEN:', !!process.env.QASE_API_TOKEN);
+console.log('QASE_PROJECT_CODE:', process.env.QASE_PROJECT_CODE);
+
