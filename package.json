@@ -19,6 +19,7 @@
   "homepage": "https://github.com/rezaparamarta/n8n-Jira-Playwright-GithubActions-Qaseio#readme",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.58.2"
+    "@playwright/test": "^1.58.2",
+    "playwright-qase-reporter": "^2.2.0"
   }
 }

@@ -1,0 +1,31 @@
+name: Playwright Tests with Qase
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Playwright tests
+        env:
+          QASE_API_TOKEN: ${{ secrets.QASE_API_TOKEN }}
+          QASE_PROJECT_CODE: ${{ secrets.QASE_PROJECT_CODE }}
+        run: npx playwright test
