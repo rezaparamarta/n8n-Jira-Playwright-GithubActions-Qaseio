@@ -4,8 +4,9 @@ import { test, expect } from '@playwright/test';
 test('SCRUM-8 - [NEGATIVE] Login fails with invalid password', async ({ page }) => {
   test.info().annotations.push({
     type: 'qase',
-    description: 'SCRUM-8'
+    description: 'NLFWIP-1',
   });
+
 
   
   await page.goto('/');
