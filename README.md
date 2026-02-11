@@ -231,7 +231,7 @@ Pipeline fail jika ada test gagal (quality gate)
 ```
 ---
 
----
+```
 🚧 Future Improvements
 
 Auto-deduplication test files per Jira key
@@ -241,9 +241,12 @@ Step-level mapping (Given / When / Then → Qase Steps)
 Auto-close Jira issue on test pass
 
 Support multi-feature routing (login, checkout, etc.)
----
+```
+
+```
 👤 Author
 Reza Paramarta
 QA Engineer | Automation | CI/CD | TestOps
+```
 
 
