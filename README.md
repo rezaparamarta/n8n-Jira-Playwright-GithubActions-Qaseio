@@ -1,14 +1,6 @@
 🚀 Jira → n8n → Playwright → GitHub Actions → Qase
 
 Automated E2E Test Generation & Reporting Pipeline
-<img width="1891" height="871" alt="image" src="https://github.com/user-attachments/assets/41661066-a4b5-48e4-b332-c6af710e1e74" />
-<img width="1890" height="873" alt="image" src="https://github.com/user-attachments/assets/7dc29674-2f7a-44ab-87df-d84ca0b8b477" />
-<img width="1917" height="880" alt="image" src="https://github.com/user-attachments/assets/198c8440-f42b-40fb-adf2-5b80b41d8961" />
-<img width="510" height="789" alt="image" src="https://github.com/user-attachments/assets/9baab937-2605-4d28-9408-e6159bb09c52" />
-
-
-
-
 ---
 📌 Overview
 
@@ -238,6 +230,13 @@ Pipeline fail jika ada test gagal (quality gate)
 ```
 ---
 
+---
+<img width="1891" height="871" alt="image" src="https://github.com/user-attachments/assets/41661066-a4b5-48e4-b332-c6af710e1e74" />
+<img width="1890" height="873" alt="image" src="https://github.com/user-attachments/assets/7dc29674-2f7a-44ab-87df-d84ca0b8b477" />
+<img width="1917" height="880" alt="image" src="https://github.com/user-attachments/assets/198c8440-f42b-40fb-adf2-5b80b41d8961" />
+<img width="510" height="789" alt="image" src="https://github.com/user-attachments/assets/9baab937-2605-4d28-9408-e6159bb09c52" />
+---
+
 ```
 🚧 Future Improvements
 
@@ -255,6 +254,7 @@ Support multi-feature routing (login, checkout, etc.)
 Reza Paramarta
 QA Engineer | Automation | CI/CD | TestOps
 ```
+
 
 
 
