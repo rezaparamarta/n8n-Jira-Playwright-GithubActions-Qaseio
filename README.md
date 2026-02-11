@@ -222,12 +222,13 @@ Pipeline fail jika ada test gagal (quality gate)
 ---
 ---
 🎯 What This Pipeline Solves
-
+```
 ✅ Eliminates manual test scripting
 ✅ Ensures Jira ↔ Test ↔ Result traceability
 ✅ Scales test creation with minimal effort
 ✅ CI-first, TestOps-ready
 ✅ Production-grade automation flow
+```
 ---
 
 ---
@@ -240,11 +241,10 @@ Step-level mapping (Given / When / Then → Qase Steps)
 Auto-close Jira issue on test pass
 
 Support multi-feature routing (login, checkout, etc.)
----
+
 ---
 👤 Author
----
----
 Reza Paramarta
 QA Engineer | Automation | CI/CD | TestOps
 ---
+
