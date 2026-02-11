@@ -2,6 +2,7 @@
 
 Automated E2E Test Generation & Reporting Pipeline
 
+---
 📌 Overview
 
 Repository ini berisi end-to-end automation pipeline untuk:
@@ -17,6 +18,7 @@ Menjalankan test via GitHub Actions (CI/CD)
 Mengirim hasil eksekusi ke Qase TestOps sebagai Test Run otomatis
 
 Pipeline ini dirancang untuk mengurangi manual scripting, menjaga single source of truth di Jira, dan memastikan traceability dari requirement → test → execution result.
+---
 
 🧩 High Level Flow
 
@@ -38,6 +40,7 @@ Playwright Execution
 Qase Test Run (Automated)
 ```
 
+---
 🛠️ Tech Stack
 
 Jira – Source of requirement & test intent
@@ -51,10 +54,11 @@ GitHub Actions – CI/CD execution
 Qase TestOps – Test case & execution reporting
 
 Node.js 20
-
+---
+---
 📂 Repository Structure
 
----
+```
 .
 ├── .github/workflows/
 │   └── playwright-qase.yml
@@ -65,8 +69,10 @@ Node.js 20
 ├── playwright.config.ts
 ├── package.json
 └── README.md
+```
 ---
 
+---
 🧠 Design Decisions & Logic
 1️⃣ Jira as Single Source of Truth
 
@@ -86,7 +92,8 @@ Dengan ini:
 Product / QA / Dev berbicara di bahasa yang sama
 
 Test selalu mengikuti requirement terbaru
-
+---
+---
 2️⃣ n8n sebagai Test Generator (Not Just Trigger)
 
 n8n tidak sekadar trigger, tapi:
@@ -100,13 +107,15 @@ Menyusun Playwright test body
 Menjamin syntax aman untuk CI
 
 Commit otomatis ke GitHub
-
+---
+---
 ⚠️ Important implementation detail
 JavaScript di n8n bukan Node.js murni, sehingga:
 
 Template literal kompleks dihindari
 
 String concatenation dipilih untuk stabilitas parser
+---
 
 3️⃣ Playwright Test Structure
 
@@ -127,6 +136,7 @@ Tidak perlu mapping manual
 
 One-to-one traceability
 
+---
 4️⃣ CI/CD via GitHub Actions
 
 Pipeline dijalankan otomatis pada:
@@ -146,7 +156,9 @@ Install Playwright browsers
 Run tests
 
 Auto-publish result ke Qase
+---
 
+---
 5️⃣ Qase Reporting Strategy
 
 Test Run dibuat otomatis
@@ -156,6 +168,7 @@ Status test mengikuti hasil Playwright
 Run diselesaikan otomatis (complete: true)
 
 Link ke Test Run dicetak di CI log
+---
 
 Contoh output:
 
@@ -196,7 +209,7 @@ test('SCRUM-15 - [NEGATIVE] Login fails with invalid password', async ({ page })
   );
 });
 ```
-
+---
 🧯 Error Handling & Stability
 
 Legacy test files terdeteksi via CI failure
@@ -206,7 +219,8 @@ Generator memastikan full URL untuk menghindari invalid navigation
 CI tetap melaporkan partial success ke Qase
 
 Pipeline fail jika ada test gagal (quality gate)
-
+---
+---
 🎯 What This Pipeline Solves
 
 ✅ Eliminates manual test scripting
@@ -214,7 +228,9 @@ Pipeline fail jika ada test gagal (quality gate)
 ✅ Scales test creation with minimal effort
 ✅ CI-first, TestOps-ready
 ✅ Production-grade automation flow
+---
 
+---
 🚧 Future Improvements
 
 Auto-deduplication test files per Jira key
@@ -224,8 +240,11 @@ Step-level mapping (Given / When / Then → Qase Steps)
 Auto-close Jira issue on test pass
 
 Support multi-feature routing (login, checkout, etc.)
-
+---
+---
 👤 Author
-
+---
+---
 Reza Paramarta
 QA Engineer | Automation | CI/CD | TestOps
+---
