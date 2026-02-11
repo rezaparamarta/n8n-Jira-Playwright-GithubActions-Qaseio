@@ -234,7 +234,7 @@ Pipeline fail jika ada test gagal (quality gate)
 <img width="1890" height="873" alt="image" src="https://github.com/user-attachments/assets/7dc29674-2f7a-44ab-87df-d84ca0b8b477" />
 <img width="1917" height="880" alt="image" src="https://github.com/user-attachments/assets/198c8440-f42b-40fb-adf2-5b80b41d8961" />
 <img width="510" height="789" alt="image" src="https://github.com/user-attachments/assets/9baab937-2605-4d28-9408-e6159bb09c52" />
-
+<img width="1901" height="985" alt="image" src="https://github.com/user-attachments/assets/03ddcbf3-2750-4055-b6dc-dced2b165977" />
 
 ```json
 {
@@ -396,6 +396,7 @@ Support multi-feature routing (login, checkout, etc.)
 Reza Paramarta
 QA Engineer | Automation | CI/CD | TestOps
 ```
+
 
 
 
