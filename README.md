@@ -394,8 +394,9 @@ Support multi-feature routing (login, checkout, etc.)
 ```
 👤 Author
 Reza Paramarta
-QA Engineer | Automation | CI/CD | TestOps
+TestOps | QA Engineer | Automation | CI/CD
 ```
+
 
 
 
